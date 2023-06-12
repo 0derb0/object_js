@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object JS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="libs/vs2015.min.css">
+
+    <style>
+        body{
+            background-color: rgba(0, 0, 0, 0.774);
+            font-size: 20px;
+            font-family: 'Source Code Pro', monospace;
+            overflow: auto;
+            height: 100%;
+        }
+        #main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        #h1{
+            text-align: center;
+        }
+        #JS{
+            font-weight: 600;
+            color: yellow;
+        }
+        button{
+            outline: none;
+            background-color: yellow;
+            border: 1px solid black;
+            border-radius: 5px;
+            box-shadow: 2px 1px #ffffff;
+            transition: 0.5s;
+            position: relative;
+        }
+        button:active{
+            /* left: 2px; */
+            top: 1px;
+            box-shadow: none;
+        }
+        #img{
+            background: url('javascript-logo.webp') center / auto no-repeat fixed;
+            min-height: 100vh;
+            background-color: #fff;
+        }
+        pre{
+           color: #ffffffa9;
+           min-height: 100vh; 
+           padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1 id="h1">Object in <span id="JS">JavaScript</span></h1>
+        <div>
+            <button id="ru">ru</button>
+            <button id="en">en</button>
+        </div>
+    </div>
+    <div id="img"></div>
+    <pre>
+        <code id="p">         
+        </code>
+    </pre>
+    <div id="img"></div>
+    <script src="script.js"></script>
+    <script src="libs/highlight.js"></script>
+    <script src="libs/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
